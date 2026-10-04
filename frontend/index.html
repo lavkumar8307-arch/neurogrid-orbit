@@ -1,0 +1,722 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>NeuroGrid Orbit — One Grid. Infinite Intelligence.</title>
+
+    <meta
+        name="description"
+        content="NeuroGrid Orbit — Multi-agent AI decision support for hypothetical Low Earth Orbit scenarios."
+    >
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+        rel="stylesheet"
+    >
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- BACKGROUND -->
+    <div class="space-background">
+        <div class="stars stars-a"></div>
+        <div class="stars stars-b"></div>
+        <div class="stars stars-c"></div>
+        <div class="nebula"></div>
+    </div>
+
+    <!-- TOP NAVIGATION -->
+    <header class="navbar">
+
+        <div class="brand">
+            <div class="brand-symbol">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+
+            <div class="brand-text">
+                <strong>NEUROGRID</strong>
+                <small>ORBIT</small>
+            </div>
+        </div>
+
+        <div class="nav-center">
+            <span class="nav-line"></span>
+            <span>AI ORBITAL INTELLIGENCE</span>
+            <span class="nav-line"></span>
+        </div>
+
+        <div class="system-status">
+            <span class="status-light"></span>
+            <span>SYSTEM ONLINE</span>
+        </div>
+
+    </header>
+
+
+    <main>
+
+        <!-- HERO / ORBIT VISUAL -->
+        <section class="hero">
+
+            <div class="hero-copy">
+
+                <div class="hero-kicker">
+                    <span class="kicker-line"></span>
+                    MULTI-AGENT AI FOR LEO
+                </div>
+
+                <h1>
+                    One Grid.
+                    <br>
+                    <span>Infinite Intelligence.</span>
+                </h1>
+
+                <p>
+                    Coordinate specialized AI agents to understand
+                    complex orbital scenarios and generate structured
+                    decision-support assessments.
+                </p>
+
+                <div class="hero-tech">
+
+                    <div>
+                        <span class="tech-dot"></span>
+                        MULTI-AGENT
+                    </div>
+
+                    <div>
+                        <span class="tech-dot"></span>
+                        LEO ANALYSIS
+                    </div>
+
+                    <div>
+                        <span class="tech-dot"></span>
+                        AI DECISION SUPPORT
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- ORBIT VISUALIZATION -->
+            <div class="orbit-visual">
+
+                <div class="orbit-glow"></div>
+
+                <div class="orbit-ring ring-one"></div>
+                <div class="orbit-ring ring-two"></div>
+                <div class="orbit-ring ring-three"></div>
+
+                <div class="orbit-plane"></div>
+
+                <div class="satellite">
+
+                    <div class="sat-body">
+                        NGO
+                    </div>
+
+                    <div class="solar-panel panel-left"></div>
+                    <div class="solar-panel panel-right"></div>
+
+                    <div class="sat-signal"></div>
+
+                </div>
+
+                <div class="orbit-object object-one"></div>
+                <div class="orbit-object object-two"></div>
+                <div class="orbit-object object-three"></div>
+
+                <div class="orbit-label label-top">
+                    LEO / 550 KM
+                </div>
+
+                <div class="orbit-label label-bottom">
+                    ORBITAL INTELLIGENCE
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- CONTROL CENTER -->
+        <section class="control-layout">
+
+            <!-- LEFT CONTROL PANEL -->
+            <aside class="control-panel">
+
+                <div class="panel-heading">
+
+                    <div>
+                        <span class="panel-eyebrow">
+                            MISSION CONTROL
+                        </span>
+
+                        <h2>Scenario Input</h2>
+                    </div>
+
+                    <span class="panel-number">
+                        01
+                    </span>
+
+                </div>
+
+
+                <!-- PRESETS -->
+                <div class="preset-label">
+                    DEMO SCENARIOS
+                </div>
+
+                <div class="preset-grid">
+
+                    <button
+                        class="preset-btn active"
+                        data-scenario="debris"
+                        onclick="loadScenario('debris')"
+                    >
+                        <span class="preset-icon">◈</span>
+                        <span>
+                            <strong>DEBRIS</strong>
+                            <small>Object encounter</small>
+                        </span>
+                    </button>
+
+
+                    <button
+                        class="preset-btn"
+                        data-scenario="collision"
+                        onclick="loadScenario('collision')"
+                    >
+                        <span class="preset-icon">!</span>
+                        <span>
+                            <strong>COLLISION</strong>
+                            <small>Collision concern</small>
+                        </span>
+                    </button>
+
+
+                    <button
+                        class="preset-btn"
+                        data-scenario="congestion"
+                        onclick="loadScenario('congestion')"
+                    >
+                        <span class="preset-icon">◎</span>
+                        <span>
+                            <strong>CONGESTION</strong>
+                            <small>Crowded orbit</small>
+                        </span>
+                    </button>
+
+
+                    <button
+                        class="preset-btn"
+                        data-scenario="mission"
+                        onclick="loadScenario('mission')"
+                    >
+                        <span class="preset-icon">◆</span>
+                        <span>
+                            <strong>MISSION</strong>
+                            <small>Mission conflict</small>
+                        </span>
+                    </button>
+
+                </div>
+
+
+                <!-- FORM -->
+                <div class="input-grid">
+
+                    <div class="input-group">
+
+                        <label for="satellite">
+                            SATELLITE
+                        </label>
+
+                        <input
+                            id="satellite"
+                            type="text"
+                            value="ORBIT-X1"
+                        >
+
+                    </div>
+
+
+                    <div class="input-group">
+
+                        <label for="priority">
+                            PRIORITY
+                        </label>
+
+                        <select id="priority">
+                            <option value="Normal">NORMAL</option>
+                            <option value="High" selected>HIGH</option>
+                            <option value="Critical">CRITICAL</option>
+                        </select>
+
+                    </div>
+
+
+                    <div class="input-group">
+
+                        <label for="altitude">
+                            ALTITUDE / KM
+                        </label>
+
+                        <input
+                            id="altitude"
+                            type="number"
+                            value="550"
+                        >
+
+                    </div>
+
+
+                    <div class="input-group">
+
+                        <label for="inclination">
+                            INCLINATION / DEG
+                        </label>
+
+                        <input
+                            id="inclination"
+                            type="number"
+                            step="0.1"
+                            value="53"
+                        >
+
+                    </div>
+
+                </div>
+
+
+                <div class="input-group scenario-field">
+
+                    <label for="scenario">
+                        SCENARIO DESCRIPTION
+                    </label>
+
+                    <textarea id="scenario">A hypothetical satellite detects a nearby space debris object while operating in Low Earth Orbit. The operator needs to assess the potential orbital and mission risks.</textarea>
+
+                </div>
+
+
+                <button
+                    class="run-button"
+                    onclick="analyzeScenario()"
+                >
+
+                    <span class="run-icon">▶</span>
+
+                    <span class="run-text">
+                        RUN NEUROGRID
+                    </span>
+
+                    <span class="run-arrow">
+                        →
+                    </span>
+
+                </button>
+
+            </aside>
+
+
+            <!-- RIGHT LIVE STATUS -->
+            <section class="status-panel">
+
+                <div class="panel-heading">
+
+                    <div>
+                        <span class="panel-eyebrow">
+                            LIVE INTELLIGENCE
+                        </span>
+
+                        <h2>Agent Network</h2>
+                    </div>
+
+                    <span class="network-status">
+                        <i></i>
+                        READY
+                    </span>
+
+                </div>
+
+
+                <!-- NETWORK -->
+                <div class="agent-network">
+
+                    <div class="network-line line-1"></div>
+                    <div class="network-line line-2"></div>
+                    <div class="network-line line-3"></div>
+                    <div class="network-line line-4"></div>
+                    <div class="network-line line-5"></div>
+
+                    <div class="agent-node node-1">
+                        <span>01</span>
+                        <strong>COORD</strong>
+                    </div>
+
+                    <div class="agent-node node-2">
+                        <span>02</span>
+                        <strong>ORBIT</strong>
+                    </div>
+
+                    <div class="agent-node node-3">
+                        <span>03</span>
+                        <strong>RISK</strong>
+                    </div>
+
+                    <div class="agent-node node-4">
+                        <span>04</span>
+                        <strong>MISSION</strong>
+                    </div>
+
+                    <div class="agent-node node-5">
+                        <span>05</span>
+                        <strong>SIM</strong>
+                    </div>
+
+                    <div class="agent-node node-6">
+                        <span>06</span>
+                        <strong>DECISION</strong>
+                    </div>
+
+                </div>
+
+
+                <!-- METRICS -->
+                <div class="metrics">
+
+                    <div class="metric">
+                        <span>AGENTS</span>
+                        <strong>06</strong>
+                    </div>
+
+                    <div class="metric">
+                        <span>ALTITUDE</span>
+                        <strong id="metricAltitude">550</strong>
+                        <small>KM</small>
+                    </div>
+
+                    <div class="metric">
+                        <span>INCLINATION</span>
+                        <strong id="metricInclination">53</strong>
+                        <small>DEG</small>
+                    </div>
+
+                    <div class="metric">
+                        <span>PRIORITY</span>
+                        <strong id="metricPriority">HIGH</strong>
+                    </div>
+
+                </div>
+
+            </section>
+
+        </section>
+
+
+        <!-- AGENT EXECUTION -->
+        <section class="execution-section" id="analysis">
+
+            <div class="section-top">
+
+                <div>
+                    <span class="section-eyebrow">
+                        NEURAL EXECUTION GRAPH
+                    </span>
+
+                    <h2>Agent Processing</h2>
+                </div>
+
+                <div class="execution-counter">
+                    <span id="completedCount">0</span>
+                    / 06 COMPLETE
+                </div>
+
+            </div>
+
+
+            <div class="execution-grid">
+
+                <!-- COORDINATOR -->
+                <article class="agent-card" data-agent="Coordinator Agent">
+
+                    <div class="agent-index">01</div>
+
+                    <div class="agent-info">
+
+                        <div class="agent-name">
+                            Coordinator Agent
+                        </div>
+
+                        <div class="agent-function">
+                            ORCHESTRATION
+                        </div>
+
+                    </div>
+
+                    <div class="agent-status">
+                        WAITING
+                    </div>
+
+                    <div class="agent-details"></div>
+
+                </article>
+
+
+                <!-- ORBIT -->
+                <article class="agent-card" data-agent="Orbit Agent">
+
+                    <div class="agent-index">02</div>
+
+                    <div class="agent-info">
+
+                        <div class="agent-name">
+                            Orbit Agent
+                        </div>
+
+                        <div class="agent-function">
+                            ORBITAL ANALYSIS
+                        </div>
+
+                    </div>
+
+                    <div class="agent-status">
+                        WAITING
+                    </div>
+
+                    <div class="agent-details"></div>
+
+                </article>
+
+
+                <!-- RISK -->
+                <article class="agent-card" data-agent="Risk Agent">
+
+                    <div class="agent-index">03</div>
+
+                    <div class="agent-info">
+
+                        <div class="agent-name">
+                            Risk Agent
+                        </div>
+
+                        <div class="agent-function">
+                            RISK ASSESSMENT
+                        </div>
+
+                    </div>
+
+                    <div class="agent-status">
+                        WAITING
+                    </div>
+
+                    <div class="agent-details"></div>
+
+                </article>
+
+
+                <!-- MISSION -->
+                <article class="agent-card" data-agent="Mission Agent">
+
+                    <div class="agent-index">04</div>
+
+                    <div class="agent-info">
+
+                        <div class="agent-name">
+                            Mission Agent
+                        </div>
+
+                        <div class="agent-function">
+                            MISSION ANALYSIS
+                        </div>
+
+                    </div>
+
+                    <div class="agent-status">
+                        WAITING
+                    </div>
+
+                    <div class="agent-details"></div>
+
+                </article>
+
+
+                <!-- SIMULATION -->
+                <article class="agent-card" data-agent="Simulation Agent">
+
+                    <div class="agent-index">05</div>
+
+                    <div class="agent-info">
+
+                        <div class="agent-name">
+                            Simulation Agent
+                        </div>
+
+                        <div class="agent-function">
+                            RESPONSE MODELING
+                        </div>
+
+                    </div>
+
+                    <div class="agent-status">
+                        WAITING
+                    </div>
+
+                    <div class="agent-details"></div>
+
+                </article>
+
+
+                <!-- DECISION -->
+                <article class="agent-card decision-card" data-agent="Decision Agent">
+
+                    <div class="agent-index">06</div>
+
+                    <div class="agent-info">
+
+                        <div class="agent-name">
+                            Decision Agent
+                        </div>
+
+                        <div class="agent-function">
+                            SYNTHESIS
+                        </div>
+
+                    </div>
+
+                    <div class="agent-status">
+                        WAITING
+                    </div>
+
+                    <div class="agent-details"></div>
+
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <!-- FINAL ASSESSMENT -->
+        <section class="assessment-section">
+
+            <div class="assessment-header">
+
+                <div>
+                    <span class="section-eyebrow">
+                        DECISION LAYER
+                    </span>
+
+                    <h2>Mission Assessment</h2>
+                </div>
+
+                <div class="assessment-status">
+                    <span></span>
+                    AWAITING ANALYSIS
+                </div>
+
+            </div>
+
+
+            <div class="assessment-main">
+
+                <div class="assessment-content">
+
+                    <div class="assessment-label">
+                        AI SYNTHESIS
+                    </div>
+
+                    <div
+                        id="result"
+                        class="final-assessment"
+                    >
+                        Run NeuroGrid to generate
+                        the final assessment.
+                    </div>
+
+                </div>
+
+
+                <div class="response-panel">
+
+                    <div class="assessment-label">
+                        HYPOTHETICAL RESPONSE PATHS
+                    </div>
+
+                    <div
+                        id="options"
+                        class="response-options"
+                    >
+
+                        <div class="empty-option">
+                            Analysis required
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- DISCLAIMER -->
+        <section class="prototype-note">
+
+            <div class="note-mark">
+                !
+            </div>
+
+            <div>
+
+                <strong>
+                    DECISION-SUPPORT PROTOTYPE
+                </strong>
+
+                <p>
+                    NeuroGrid Orbit evaluates hypothetical scenarios.
+                    It does not calculate actual collision probability,
+                    replace validated orbital tracking systems, or
+                    autonomously control spacecraft.
+                </p>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- FOOTER -->
+    <footer>
+
+        <div class="footer-left">
+            <strong>NEUROGRID ORBIT</strong>
+            <span>ONE GRID. INFINITE INTELLIGENCE.</span>
+        </div>
+
+        <div class="footer-right">
+            MULTI-AGENT AI
+            <span>•</span>
+            LEO DECISION SUPPORT
+        </div>
+
+    </footer>
+
+
+    <script src="app.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,25 @@
+# Environment & Secrets
+.env
+.env.local
+.secretsentry/
+
+# Python Virtual Environments & Caches
+.venv/
+.venv-*/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.pytest_cache/
+
+# Node & Frontend Build Output
+node_modules/
+dist/
+.vite/
+.aider-desk/
+
+# OS & IDE
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
